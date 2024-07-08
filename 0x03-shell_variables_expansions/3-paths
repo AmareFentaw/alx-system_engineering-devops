@@ -1,2 +1,3 @@
 #!/bin/bash
-$PATH=/bin::::/home:/usr:::::/home/me
+echo "There are $(find "$PATH" -type d | wc -l) directories in your PATH."
+
