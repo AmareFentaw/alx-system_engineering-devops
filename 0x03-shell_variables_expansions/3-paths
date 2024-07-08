@@ -1,3 +1,2 @@
 #!/bin/bash
-echo "There are $(find "$PATH" -type d | wc -l) directories in your PATH."
-
+echo $PATH | tr ':' '\n' | wc -l
